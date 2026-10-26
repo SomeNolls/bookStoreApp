@@ -1,0 +1,20 @@
+{
+  "name": "bookstore-app",
+  "version": "1.0.0",
+  "description": "Book Store mobile app: the Book Store website in a Capacitor shell",
+  "scripts": {
+    "sync": "node scripts/write-site-url.js && cap sync",
+    "android": "npm run sync && cap open android",
+    "run:android": "npm run sync && cap run android"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/core": "^8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.3",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

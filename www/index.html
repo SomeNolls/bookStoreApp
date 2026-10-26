@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Book Store</title>
+    <style>
+        /* Shown only when the Book Store site can't be reached, so it has no outside fonts or files. */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 32px 24px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            background: #F7F6F2;
+            color: #1B1B1B;
+            font-family: system-ui, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #1F3A2E;
+            font-family: Georgia, serif;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        p {
+            max-width: 320px;
+            margin: 0;
+            color: #5A5A55;
+            line-height: 1.6;
+        }
+        button {
+            height: 50px;
+            padding: 0 28px;
+            border: 0;
+            border-radius: 25px;
+            background: #1F3A2E;
+            color: #FFFFFF;
+            font: inherit;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <svg width="40" height="40" viewBox="0 0 34 34" aria-hidden="true">
+        <rect x="2" y="4" width="6" height="26" fill="#1F3A2E"></rect>
+        <rect x="10" y="4" width="6" height="26" fill="#1F3A2E"></rect>
+        <rect x="18" y="4" width="6" height="26" fill="#1F3A2E"></rect>
+        <rect x="25" y="4" width="6" height="26" fill="#1F3A2E" transform="rotate(-12 28 30)"></rect>
+    </svg>
+    <h1>Can't reach Book Store</h1>
+    <p>Check your internet connection and try again.</p>
+    <button type="button" onclick="location.href = window.SITE_URL">Try again</button>
+
+    <!-- Written by scripts/write-site-url.js on every `npm run sync`. -->
+    <script src="site-url.js"></script>
+</body>
+</html>
